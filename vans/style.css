@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    background: #2d343628;
+    height: 100vh;
+}
+
+.container .navigation {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container .navigation .logo {
+    height: 100px;
+}
+
+.container .navigation ul {
+    list-style: none;
+}
+
+.container .navigation ul li {
+    display: inline-block;
+    margin: 0 10px 0;
+}
+
+.container .navigation ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container .navigation ul li a:hover {
+    color: #2d3436;
+}
+
+.container .content {
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .left {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .left h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .left p {
+    color: #333;
+}
+
+.content .left a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #2d3436;
+    color: #fff;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .right {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.content .right img {
+    max-width: 600px;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3436;
+    clip-path: circle(600px at right 800px);
+}
